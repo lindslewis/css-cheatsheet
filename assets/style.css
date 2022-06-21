@@ -1,0 +1,69 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text: violet;
+    --caption: azure;
+    --background: slategrey;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*top of page header*/
+header {
+    max-width: 60%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5em;
+    margin: 0 auto;
+}
+header h1 {
+    color: var(--primary-text);
+}
+
+header p {
+    padding: 1.5em;
+    line-height: 1.5em;
+    color: var(--caption);
+}
+
+/* primary portion of the page */
+main {
+    width: 95%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+footer {
+    color: var(--primary-text);
+    text-align: center;
+    padding: 1.5em;
+    margin: 1.5em, 0, 1.5em, 0;
+}
+
+
+/*for the wrap for various screen widths*/
+@media screen and (max-width: 992px) {
+
+}
+

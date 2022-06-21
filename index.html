@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>CSS Snippet Cheatsheet</title>
+</head>
+
+
+<body>
+        <header>
+            <h1>CSS Snippet Cheatsheet</h1>
+            <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+        </header>
+        
+    <main>
+
+        <!--box 1-->
+        <section class="card">
+            <h2 class="headers">Flexbox Row</h2>
+
+            <p class="desc">Use these three properties to create a Flexbox row layout.</p>
+
+            <article class="code">
+
+            <!--use pre tag for code snippets-->
+                <pre>
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                </pre>
+
+            </article>
+
+        </section>
+
+
+        <!--box 2-->
+        <section class="card">
+
+            <h2 class="headers">Flexbox Column</h2>
+
+            <p class="desc">Use this to create a Flexbox column layout.</p>
+
+            <article class="code">
+
+                <pre>
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                }
+                </pre> 
+
+            </article>
+        
+        <!--box 3-->
+        </section>
+
+        <section class="card">
+
+            <h2 class="headers">CSS Grid Layout</h2>
+
+            <p class="desc">Build a 12-column layout using CSS Grid</p>
+
+            <article class="code">
+
+                <pre>
+                    .grid {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: repeat (12, 1fr);
+                    }
+
+
+                </pre>
+
+
+            </article>
+
+        </section>
+
+        <!-- box 4 -->
+        <section class="card">
+
+            <h2 class="headers">Linear Gradients</h2>
+
+            <p class="desc">This will create a background linear gradient from top to bottom.</p>
+
+            <article class="code">
+                
+                <pre>
+                    .linear-gradient-background {
+                        background-image: linear-gradient(
+                            rgba(232, 102, 236, 0.3) 0%,
+                            rgba(232, 102, 236, 0.6) 100%
+                            );
+                    }
+                </pre>
+
+            </article>
+
+        </section>
+
+        <!-- box 5 -->
+
+        <section class="card">
+
+            <h2 class="headers">Box Transition Glow</h2>
+
+            <p class="desc">Use transition and box shadows to glow on hover.</p>
+
+            <article class="code">
+
+                <pre>
+                    .code-card .card-header {
+                        border-radius: 8px;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    .code-card: hover,
+                    .code-card: hover .card-header {
+                        box-shadow: inset 0px 0px 8px
+                    rgba(232, 102, 236, 1), 0 0 15px
+                    rgba(232, 102, 236, 1);
+                    }
+                </pre>
+
+            </article>
+
+        </section>
+
+        <!-- box 6 -->
+        <section class="card">
+            
+            <h2 class="headers">Overlay Card with Tile</h2>
+
+            <p class="desc">Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+
+            <article class="code">
+
+                <pre>
+                    .card-header {
+                        position: relative;
+                        margin-top: -20px;
+                    }
+
+                </pre>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+
+<footer>
+
+    <h3>Made with <id="heart">&#10084</id> and CSS</h3>
+
+</footer>
+</html>
